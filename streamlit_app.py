@@ -13,7 +13,7 @@ llm = Groq(model="llama3-70b-8192", api_key=os.getenv("api_key"))
 assistant = Assistant(llm=llm, tools=[DuckDuckGo()], show_tool_calls=False)
 
 # Set up the Streamlit app
-st.title("QBot")
+st.title("Quranium Bot")
 
 # Initialize chat history
 if "messages" not in st.session_state:
